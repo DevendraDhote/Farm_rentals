@@ -689,3 +689,59 @@ new Carousel(
   true,
   true
 );
+
+
+
+/* ==============================gsap=================== */
+
+
+document.querySelector("#firstHeading").style.opacity = "0";
+gsap.to("#firstHeading",{
+  scrollTrigger:{
+      trigger:".cBody",
+      scrub:3,
+      start:"0% 95%",
+      end:"10% 60%",
+  },
+  opacity:1,
+  ease: Power0.easeInOut,
+})
+document.querySelector(".carousel-container").style.marginLeft = "350vmax";
+gsap.to(".carousel-container",{
+  scrollTrigger:{
+      trigger:".cBody",
+      scrub:3,
+      start:"10% 65%",
+      end:"10% 60%",
+  },
+  marginLeft:"0vmax",
+  ease: Power0,
+})
+
+document.querySelector("#headingtwo").style.opacity = "0";
+gsap.to("#headingtwo",{
+  scrollTrigger:{
+      // markers:true,
+      trigger:"#products",
+      scrub:3,
+      start:"0% 95%",
+      end:"10% 70%",
+  },
+  opacity:1,
+  ease: Power0.easeInOut,
+})
+
+document.querySelector("#buyBtn").style.opacity = "0";
+gsap.to("#buyBtn",{
+  scrollTrigger:{
+      markers:true,
+      trigger:".cBody",
+      scrub:3,
+      start:"40% 35%",
+      end:"40% 30%",
+  },
+  opacity:1,
+  ease: Power0,
+})
+
+/* ==============================gsap-end=================== */
