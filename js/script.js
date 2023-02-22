@@ -4,17 +4,6 @@ let all = document.querySelector("#smooth-wrapper");
 let lod = document.querySelector(".lod");
 
 
-preloader.style.display = "initial"
-
-all.style.opacity ="0.1"
-
-setTimeout(() => {
-  all.style.opacity ="1"
-  preloader.style.display = "none"
-  lod.style.display = "none"
-
-}, 1500);
-
 document.querySelector("#menu-btn").onclick = () => {
   navbar.classList.add("active");
 };
@@ -210,7 +199,6 @@ gsap.from(".category .heading",{
 
 var tractor = document.querySelector(".carousel-wrapper .item-1");
 
-setTimeout(() => {
   gsap.from("header .navbar a,.search_bar, .icons", {
     duration: 2.5,
     scale: 0.8,
@@ -247,8 +235,6 @@ setTimeout(() => {
     y: 100,
     duration: 0.3,
   });
-
-},1200);
 //////////////////////////////////////////////////
 
 
