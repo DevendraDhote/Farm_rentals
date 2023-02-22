@@ -734,7 +734,6 @@ gsap.to("#headingtwo",{
 document.querySelector("#buyBtn").style.opacity = "0";
 gsap.to("#buyBtn",{
   scrollTrigger:{
-      markers:true,
       trigger:".cBody",
       scrub:3,
       start:"40% 35%",
@@ -743,5 +742,147 @@ gsap.to("#buyBtn",{
   opacity:1,
   ease: Power0,
 })
+
+document.querySelector("#EquipmentsDiv").style.marginRight = "350vmax";
+gsap.to("#EquipmentsDiv",{
+  scrollTrigger:{
+      trigger:"#products",
+      scrub:3,
+      start:"40% 85%",
+      end:"40% 80%",
+  },
+  marginRight:"0vmax",
+  ease: Power0,
+})
+
+document.querySelector("#headingThree").style.opacity = "0";
+gsap.to("#headingThree",{
+  scrollTrigger:{
+      trigger:".headingThree",
+      scrub:3,
+      start:"40% 75%",
+      end:"40% 70%",
+  },
+  opacity:1,
+  ease: Power0,
+})
+
+document.querySelector("#headingFour").style.opacity = "0";
+gsap.to("#headingFour",{
+  scrollTrigger:{
+      trigger:"#headingFour",
+      scrub:3,
+      start:"40% 85%",
+      end:"40% 80%",
+  },
+  opacity:1,
+  ease: Power0,
+})
+
+let Time = gsap.timeline({scrollTrigger:{
+  trigger:".box-container",
+  scrub:3,
+  start:"20% 79%",
+  end:"40% 75%",
+}}); 
+
+
+ let Box = document.querySelectorAll(".box-container .box")
+ Box.forEach(function(elem){
+    elem.style.rightLeft = "220mvax";
+    elem.style.opacity = "0";
+ })
+ Box.forEach(function(elem){
+      Time.to(elem,{
+        rightLeft : "0mvax",
+        opacity : "1",
+      })
+ })
+
+
+ document.querySelector("#outTeam").style.opacity = "0";
+ document.querySelector("#outTeam").style.marginTop = "10vmax";
+ gsap.to("#outTeam",{
+   scrollTrigger:{
+       trigger:"#outTeam",
+       scrub:3,
+       start:"0% 65%",
+       end:"0% 60%",
+   },
+   opacity:1,
+   marginTop:"0vmax",
+   ease: Power0,
+ })
+
+
+ document.querySelector("#teamImage").style.marginLeft = "10vmax";
+ document.querySelector("#teamImage").style.opacity = "0";
+ gsap.to("#teamImage",{
+   scrollTrigger:{
+       trigger:"#teamImage",
+       scrub:3,
+       start:"0% 65%",
+       end:"0% 60%",
+   },
+   opacity:1,
+   marginLeft:"0vmax",
+   ease: Power0,
+ })
+
+ document.querySelector("#teamDown").style.marginTop = "10vmax";
+ document.querySelector("#teamDown").style.opacity = "0";
+
+ gsap.to("#teamDown",{
+  scrollTrigger:{
+      trigger:"#teamImage",
+      scrub:3,
+      start:"20% 45%",
+      end:"20% 40%",
+  },
+  opacity:1,
+  marginTop:"0vmax",
+  ease: Power0,
+})
+
+
+ document.querySelector("#headingFive").style.opacity = "0";
+
+ gsap.to("#headingFive",{
+  scrollTrigger:{
+      trigger:"#headingFive",
+      scrub:3,
+      start:"20% 75%",
+      end:"20% 70%",
+  },
+  opacity:1,
+  marginTop:"0vmax",
+  ease: Power0,
+})
+
+
+let TimeTwo = gsap.timeline({scrollTrigger:{
+  trigger:"#reviews",
+  scrub:3,
+  start:"20% 79%",
+  end:"40% 79%",
+ 
+}});
+
+
+
+let Review = document.querySelectorAll(".slide2")
+Review.forEach(function(elem){
+   elem.style.marginLeft = "220mvax";
+   elem.style.opacity = "0";
+})
+Review.forEach(function(elem){
+    TimeTwo.to(elem,{
+       marginLeft : "0mvax",
+       opacity : "1",
+       ease: Power0,
+     })
+})
+
+
 
 /* ==============================gsap-end=================== */
