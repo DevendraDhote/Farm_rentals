@@ -20,6 +20,10 @@ html {
   scroll-padding-top: 5rem;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 .loader:before,
 .loader:after {
   border-radius: 50%;
