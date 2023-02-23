@@ -20,6 +20,10 @@ html {
   scroll-padding-top: 5rem;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 .loader:before,
 .loader:after {
   border-radius: 50%;
@@ -459,8 +463,8 @@ section {
 /*---------------------------------------- about section css ------------------------------------------------- */
 
 .about {
-  height: 110vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   background-color: rgb(220, 220, 220);
   display: -ms-flexbox;
@@ -1146,7 +1150,6 @@ section {
   }
   .about {
     flex-direction: column;
-    width: 42vmax !important;
   }
   .about .left {
     width: 100%;
