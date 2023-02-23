@@ -779,21 +779,6 @@ let Time = gsap.timeline({scrollTrigger:{
    ease: Power0,
  })
 
-
- document.querySelector("#teamImage").style.marginLeft = "10vmax";
- document.querySelector("#teamImage").style.opacity = "0";
- gsap.to("#teamImage",{
-   scrollTrigger:{
-       trigger:"#teamImage",
-       scrub:3,
-       start:"0% 65%",
-       end:"0% 60%",
-   },
-   opacity:1,
-   marginLeft:"0vmax",
-   ease: Power0,
- })
-
  document.querySelector("#teamDown").style.marginTop = "10vmax";
  document.querySelector("#teamDown").style.opacity = "0";
 
