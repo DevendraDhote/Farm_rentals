@@ -1152,6 +1152,7 @@ section {
   }
   .about {
     flex-direction: column;
+    width: 42vmax !important;
   }
   .about .left {
     width: 100%;
@@ -1185,6 +1186,10 @@ section {
   }
   .carousel{
     margin-bottom: -23vmax !important;
+    width: 50vmax !important;
+  }
+  .reviews{
+    width: 49vmax !important;
   }
 }
 
