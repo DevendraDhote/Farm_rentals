@@ -565,18 +565,12 @@ section {
   background-color: rgb(216, 216, 216);
   margin-bottom: 1vmax;
   border-radius: 1vmax;
-  background-image: url('/images/groupframe.jpg');
-  background-position: center;
-  background-size: cover;
 }
 
 .about .up > img {
-  position: absolute;
   border-radius: 1vmax;
-  top: -3%;
-  right: -2%;
-  height: 95%;
-  width: 75%;
+  height: 100%;
+  width: 100%;
   object-fit: fill;
   box-shadow: 0 0.5vmax 0.8vmax rgba(0, 0, 0, 0.377);
 }
