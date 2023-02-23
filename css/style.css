@@ -20,22 +20,6 @@ html {
   scroll-padding-top: 5rem;
 }
 
-.lod {
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(255, 255, 255, 0.171);
-}
-
-.loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: rotate 2s infinite;
-  height: 50px;
-  width: 50px;
-}
-
 .loader:before,
 .loader:after {
   border-radius: 50%;
