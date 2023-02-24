@@ -323,7 +323,7 @@ gsap.to("#firstHeading",{
   ease: Power0.easeInOut,
 })
 document.querySelector(".carousel").style.marginLeft = "350vmax";
-gsap.to(".carousel-container",{
+gsap.to(".carousel",{
   scrollTrigger:{
       trigger:".cBody",
       scrub:3,
